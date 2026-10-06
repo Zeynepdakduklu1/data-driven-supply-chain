@@ -1,44 +1,96 @@
-# Data-Driven Supply Chain
 
-A collection of data-driven supply chain projects developed using Python, focusing on statistical modeling, machine learning, and data-driven decision-making under uncertainty.
+# Data-Driven Supply Chain Analytics
+
+A collection of data-driven supply chain projects developed in Python, exploring how statistical methods, optimization, and machine learning can support decision-making under demand uncertainty.
+
+The projects progress from fundamental demand analysis and data-driven optimization to contextual modeling, regression, time-series features, and tree-based machine learning.
+
+---
 
 ## Projects
 
-### Statistical Demand Modeling
-Exploratory and statistical analysis of demand data to support data-driven inventory decisions.
+### 1. Statistical Demand Modeling
+`statistical-demand-modeling.ipynb`
 
-**Methods:** Descriptive Statistics, Demand Analysis, Cost-Based Decision Making
+Analysis of historical demand patterns and uncertainty using descriptive statistics and variability measures. The project evaluates demand distributions and compares decision strategies under asymmetric costs.
 
-### Sample Average Approximation
-Implementation of Sample Average Approximation (SAA) to derive data-driven decisions from historical demand observations.
+**Key methods:**  
+`Descriptive Statistics` · `Coefficient of Variation` · `Demand Analysis` · `Cost Evaluation`
 
-**Methods:** Sample Average Approximation (SAA), Empirical Demand Distributions, Optimization
+---
 
-### Feature-Based SAA Modeling
-Extension of SAA models by incorporating contextual information and demand segmentation to improve decision quality.
+### 2. Sample Average Approximation
+`sample-average-approximation.ipynb`
 
-**Methods:** Feature Engineering, Demand Segmentation, Sample Average Approximation
+Data-driven optimization using historical demand observations. The project analyzes service levels, underage and overage costs, salvage values, and applies Sample Average Approximation to determine optimal decisions from empirical demand data.
 
-### Linear Regression Modeling
-Predictive modeling using linear regression with contextual and time-series features, including interaction terms and lagged demand variables.
+**Key methods:**  
+`Sample Average Approximation (SAA)` · `Empirical Distributions` · `Service-Level Analysis` · `Cost Optimization`
 
-**Methods:** Linear Regression, Feature Engineering, Interaction Terms, Autocorrelation, Lagged Features
+---
 
-### Decision Tree & Random Forest
-Application and comparison of tree-based machine learning models for data-driven decision-making, including hyperparameter evaluation.
+### 3. Feature-Based SAA Modeling
+`feature-based-saa-modeling.ipynb`
 
-**Methods:** Decision Trees, Random Forests, Hyperparameter Tuning, Model Evaluation
+Extension of Sample Average Approximation through contextual demand segmentation. Demand observations are grouped using features such as season and weekday, allowing decisions to adapt to different demand environments.
 
-## Technologies
+The project also examines the trade-off between model flexibility and generalization when increasingly granular feature combinations are introduced.
 
-- Python
-- pandas
-- NumPy
-- scikit-learn
-- Jupyter Notebook
-- PuLP
-- ddop
+**Key methods:**  
+`Contextual Features` · `Demand Segmentation` · `Feature Engineering` · `SAA` · `Model Evaluation`
 
-## Key Concepts
+---
 
-Machine Learning · Predictive Modeling · Feature Engineering · Time Series Analysis · Optimization · Supply Chain Analytics · Data-Driven Decision Making
+### 4. Linear Regression & Time-Series Modeling
+`linear-regression-modeling.ipynb`
+
+Predictive modeling using contextual and temporal information. Linear regression models are trained with numerical and categorical features and extended through interaction terms.
+
+The project also investigates temporal demand dependencies using autocorrelation and lagged demand features, connecting predictive modeling with data-driven operational decisions.
+
+**Key methods:**  
+`Linear Regression` · `One-Hot Encoding` · `Feature Engineering` · `Interaction Terms` · `Autocorrelation` · `Lagged Features`
+
+---
+
+### 5. Decision Trees & Random Forests
+`decision-tree-random-forest.ipynb`
+
+Application of tree-based machine learning models to data-driven decision-making. Decision Trees and Random Forests are trained and compared using different hyperparameter settings.
+
+Validation performance is used to investigate model complexity, robustness, and the effect of overfitting on decision quality.
+
+**Key methods:**  
+`Decision Trees` · `Random Forests` · `Hyperparameter Tuning` · `Validation` · `Model Comparison`
+
+---
+
+## Tech Stack
+
+**Language & Environment**  
+`Python` · `Jupyter Notebook`
+
+**Data & Machine Learning**  
+`NumPy` · `pandas` · `scikit-learn`
+
+**Optimization & Decision Modeling**  
+`PuLP` · `ddop`
+
+---
+
+## Skills Demonstrated
+
+- Exploratory and statistical demand analysis
+- Data-driven optimization under uncertainty
+- Feature engineering and contextual modeling
+- Machine learning model development
+- Time-series feature analysis
+- Hyperparameter tuning and model validation
+- Translating predictive models into operational decisions
+- Comparing models based on decision costs rather than predictive accuracy alone
+
+---
+
+## About
+
+These projects were completed as part of coursework in **Data-Driven Supply Chain Management** and demonstrate the progression from statistical demand analysis to machine-learning-based decision models.
